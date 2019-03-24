@@ -1,0 +1,51 @@
+*{
+    /* 百分比宽度和百分比高度表现不一样，是与浏览器的渲染机制有关。
+
+Web浏览器在计算有效宽度时会考虑浏览器窗口的打开宽度。
+
+如果你不设置块级宽度值，那浏览器会自动将页面内容平铺填满整个横向宽度。（即块级元素的宽度），此时widh:auto.
+
+但是高度的计算方式完全不一样。事实上，浏览器根本就不计算内容的高度，除非内容超出了视窗范围(导致滚动条出现)。或者你给整个页面设置一个绝对高度。否则，浏览器就会简单的让内容往下堆砌，页面的高度根本就无需考虑。
+因为页面根元素的html元素的高度为auto(实际上为0)，body的height也为0，所以，当你让一个元素的高度设定为百分比高度时，父级的高度如果是auto，那你的子级设置%高度，就无法取到实际值。
+
+因为父级元素的高度是由该元素里面的内容撑起的，在不设置该圆素高度的前提下。
+于是子元素的高度height: 50% 也不会起作用。解决办法就是给html和body加上height: 100%。
+如果 你非得想叫子级用height,那么你可以设置父级的height:100vw，即父级高度是屏幕的宽度，从而实现百分比自适应，
+
+总结：
+如果一个元素要浮动，那么它的祖先元素一定要有高度。有高度的盒子，才能关住浮动。
+ */
+    height: 100vw;
+    
+}
+body{
+    margin: 0px;
+    /*清除  */
+}
+.box{
+   width: 30%;
+   height: 30%;
+   margin-left: 2.5%;
+   margin-top: 2.5%;
+   background-color:orange;
+   border-radius: 20%;
+   float: left;
+}
+button{
+    margin: 5%;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+    outline: none;
+    list-style-type: none;
+    
+}
+.button-one{
+    color: white;
+    background-color:orange;
+}
+.button-two{
+    border-color: orange;
+    color: orange;
+    background-color: white;
+}
