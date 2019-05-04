@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../task5/scss/enter.css">  此路径会导致从服务器路径进去的该html 
+        加载不了该css文件 因为在Nginx中的该html的根目录一直写到了task5 而这里又重复了task5       
+        所以当从服务器路径进去时正确的路径为 task5 下的目录scss下的enter.css-->
+    <!-- 注意：这里的enter.js 文件是直接在task5文件下的 所以直接写enter.js即可以 加载 -->
+        <link rel="stylesheet" href="scss/enter.css">
+</head>
+
+<body>
+    <form action="" id="datas">
+        <p>后台登录</p>
+        <div>
+            <img src="img/iphone.png" alt="ss">
+            <input placeholder="请输入账号" type="text" style="border:0;outline:0;border-left: 1px solid;" maxlength="11"
+                name="name">
+        </div>
+
+        <div>
+            <img src="img/locked 2.png" alt="uu">
+            <input placeholder="请输入密码" type="password" style="border:0;outline:0;border-left: 1px solid;"
+              name="pwd">
+        </div>
+        <h3></h3>
+        <button type="button">登&nbsp;&nbsp;&nbsp;录</button>
+    </form>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="enter.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/bpic5121.png);
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    height: 100vh;
+    overflow: hidden; 
+}
+form{
+    width: 280px;
+    height: 260px;
+    background-color: rgba(240,248,255,.6); 
+    border-radius: 10px;
+}
+p{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 17px;
+}
+div {
+    position: relative;
+    height: 50px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 1);
+}
+
+input{
+    position: absolute;
+    top: calc(50% - 8px);
+    padding-left: 20px;
+    /* 不要只会用margin 如果这里设置的是    margin-left: 20px;则会将表单自带的左边框的左外边距也为20px 从而达不到左边框与内容有间距的目的（而设置左内边距（即填充）可以达到此目的） */
+    height: 16px;
+    font: 16px / 6px STHeitiSC-Light;
+    font-weight: 300;
+    color: black;
+
+}
+ 
+img {
+    border-radius: 2px 2px 2px 2px;
+    margin: 15px;
+    /* width: 13px; 
+    height: 20px; */
+    /* 为什么这里不需要高度 因为父级元素div已经设置了高度=50px 并且这里也设置了margin=15px  所以内容的高度就是固定值20px了 */
+    background: rgba(255, 255, 255, 1);
+
+}
+
+h3{
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    border: none;
+    /* 上一行是去除按钮自带的边框 */
+    margin: 10px 0;
+    height: 44px;
+    font-size: 22px;
+    color: white;
+    background-color: rgba(95, 192, 205,.5); 
+    outline: none;  
+}
