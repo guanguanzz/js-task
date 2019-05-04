@@ -1,0 +1,79 @@
+body {
+    background-color: #29BDE0;
+}
+
+header {
+    @include box(100%, 50px);
+    position: fixed;
+    top: 0;
+    border-bottom: $borderl;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    background-color: #29BDE0;
+    z-index: 1;
+}
+
+main {
+    margin-bottom: 70px;
+    margin-top: 50px;
+}
+
+.main-there {
+    display: none;
+    // justify-content: space-around;
+    @include box(32vw, 35vw);
+
+    .box-nei {
+       
+        @include flex(center, column);
+        // display: none;
+        @include box(27vw, 35vw);
+        margin: 0 3vw;
+        .nei-one {
+            @include box(25vw, 18vw);
+            text-align: center;
+            line-height: 18vw;
+            font-size: 5vw;          
+            border: 1vw solid white;
+            border-bottom: 0;
+            background-color: #FBB435;
+            
+        }
+
+        .nei-two {
+            @include box(25vw, 7vw);
+            border: 1vw solid white;
+            border-top: 0;
+            color: white;
+            text-align: center;
+            line-height: 7vw;
+            font-size: 5vw;
+            background-color: #1A99B7;
+        }
+    }
+
+
+}
+
+
+footer {
+    @include box(100%, 60px);
+    @include flex(center, row);
+    position: fixed;
+    bottom: 0;
+    background-color: #29BDE0;
+    z-index: 1;
+
+    button {
+        @include box(80%, 50px);
+        border: 0;
+        color: white;
+        font-size: 20px;
+        background-color: orange;
+        outline: none;
+        border-radius: 10px;
+    }
+
+}

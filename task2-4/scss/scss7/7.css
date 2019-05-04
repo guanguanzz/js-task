@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/*重置*/
+body, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-bottom: 60px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  font: 17px / 2px HiraginoSansGB-W3;
+  font-weight: normal;
+  color: white;
+  background-color: #29BDE0;
+  border-bottom: 1px solid white;
+  z-index: 1;
+}
+
+header .home {
+  width: 26px;
+  height: 21px;
+  margin-left: 10px;
+  background: url(../../img/bgi.png) no-repeat -73px -133px;
+}
+
+header .plaint {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background: url(../../img/bgi.png) no-repeat -119px -133px;
+}
+
+.centre {
+  width: 100%;
+  height: 250px;
+  margin-top: 40px;
+  background-color: #29BDE0;
+}
+
+.centre .logo {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  font: 24px / 1px HiraginoSansGB-W6;
+  font-weight: normal;
+  color: white;
+}
+
+.centre .logo .logo-1 {
+  position: absolute;
+  left: calc(50% - 88px);
+  margin-top: 20px;
+  width: 176px;
+  height: 103px;
+  background: url(../../img/bgi.png) no-repeat -10px -10px;
+}
+
+.centre .logo .logo-2 {
+  position: absolute;
+  left: calc(50% - 21px);
+  margin-top: 20px;
+  width: 42px;
+  height: 42px;
+  background: url(../../img/bgi.png) no-repeat -10px -133px;
+}
+
+.centre .logo .wodi {
+  position: absolute;
+  left: calc(50% - 50px);
+  top: 100px;
+  width: 100px;
+}
+
+.centre .firsts {
+  width: 80%;
+  margin: 0 auto;
+  font: 18px /17px HiraginoSansGB-W3;
+  font-weight: normal;
+  color: white;
+}
+
+.centre .firsts li {
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #535353;
+  padding-left: 50px;
+}
+
+.day .skii {
+  height: 15px;
+  font: 13px/ 9px HiraginoSansGB-W3;
+  font-weight: normal;
+  color: #a6a6a6;
+}
+
+.day .skiis {
+  height: 15px;
+  font: 13px/ 9px HiraginoSansGB-W3;
+  font-weight: normal;
+  color: #a6a6a6;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(41, 189, 224, 0.5);
+}
+
+footer button {
+  width: 42%;
+  height: 40px;
+  margin: 0 2%;
+  border: 0;
+  font: 20px /2px STHeitiSC-Light;
+  font-weight: 300;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+}
+
+footer .recur {
+  background-color: red;
+}
+
+footer .share {
+  background-color: gold;
+}
+/*# sourceMappingURL=7.css.map */

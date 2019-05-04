@@ -1,0 +1,134 @@
+main {
+    margin-bottom: 60px;
+}
+
+header {
+    @include flex(space-between,row);
+    position: fixed;
+    top: 0;
+    @include box(100%, 40px);
+    font: 17px / 2px HiraginoSansGB-W3;
+    font-weight: normal;
+    color: white;
+    background-color: #29BDE0;
+    border-bottom: $borderl;
+    z-index: 1;
+
+    .home {
+        @include box(26px, 21px);
+        margin-left: 10px;
+
+        background:url(../../img/bgi.png) no-repeat  -73px -133px;
+
+    }
+
+    .plaint {
+        @include box(20px, 20px);
+        margin-right: 10px;
+        background: url(../../img/bgi.png) no-repeat  -119px -133px;
+    }
+}
+
+.centre {
+    @include box(100%, 250px);
+    margin-top: 40px;
+    background-color: #29BDE0;
+
+    .logo {
+        @include box(100%, 150px);
+        position: relative;
+        font: 24px / 1px HiraginoSansGB-W6;
+        font-weight: normal;
+        color: white;
+
+        .logo-1 {
+            position: absolute;
+            left: calc(50% - 88px);
+            margin-top: 20px;
+            @include box(176px, 103px);
+            background: url(../../img/bgi.png) no-repeat -10px -10px;
+        }
+
+        .logo-2 {
+            position: absolute;
+            left: calc(50% - 21px);
+            margin-top: 20px;
+            @include box(42px, 42px);
+            background: url(../../img/bgi.png) no-repeat  -10px -133px;
+        }
+
+        .wodi {
+            position: absolute;
+            left: calc(50% - 50px);
+            top: 100px;
+            width: 100px;
+        }
+    }
+    // .introduce {
+    //     @include box(80%,50px );
+    //     /* 下面这行的作用 是水平居中 但是前提是一定要设置宽度 */
+    //     margin: 0 auto 15px;
+    //     font: 17px / 21px HiraginoSansGB-W6;
+    //     font-weight: normal;
+    //     color: rgba(255, 200, 101, 1);
+    // }
+    .firsts {
+        width: 80%;
+        margin: 0 auto;
+        font: 18px /17px HiraginoSansGB-W3;
+        font-weight: normal;
+        color: white;
+        li{
+            height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+}
+.day {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #535353;
+    padding-left: 50px;   
+    .skii {
+        height: 15px;
+        font: 13px/ 9px HiraginoSansGB-W3;
+        font-weight: normal;
+        color: rgba(166, 166, 166, 1);
+    }
+    .skiis{
+        height: 15px;
+        font: 13px/ 9px HiraginoSansGB-W3;
+        font-weight: normal;
+        color: rgba(166, 166, 166, 1);
+    }
+}
+
+
+footer {
+    @include flex(center,row);
+    position: fixed;
+    bottom: 0;
+    @include box(100%,60px );
+    background: rgba(41, 189, 224, 0.5);
+    button {
+        @include box(42%,40px );
+        margin: 0 2%;
+        border: 0;
+        font: 20px /2px STHeitiSC-Light;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 1);
+        outline: none;
+        border-radius: 5px;
+       
+    }
+    .recur {
+        background-color: red;   
+    }   
+    .share {  
+        background-color: gold;
+    }
+}

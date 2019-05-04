@@ -1,0 +1,33 @@
+//该文件是放常量 混合器 占位符等  但是在总的scss文件中需要最先引入 否则下面的子scss文件 运用不了该常量 混合器 占位符等 
+
+// 常量
+$border:1px solid #29B078;
+$borders: 6px solid white;
+$bordert:1px solid darkgray; 
+$borderl:1px solid white;
+$bordere:3px solid white;
+$borderp:1px solid darkgrey;
+$box:1px 1px 2px 2px darkgray;
+$color:#29B078;
+// 混合器
+@mixin box($x, $y) {
+    width: $x;
+    height: $y;
+}
+
+@mixin flex($justify, $flex) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $flex;   
+}
+
+// @mixin bgi ($x, $y) {
+//     background: url(../img/css703.png)no-repeat $x $y;
+// }
+// 占位符
+%flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

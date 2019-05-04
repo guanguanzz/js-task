@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../scss/scss2/2.css">
+</head>
+
+<body>
+    <header>
+        <!-- <a onclick="skip()"></a> -->
+        <a></a>
+    </header>
+    <main>
+        <h3>玩家匹配</h3>
+        <div style=" height: 180px;">
+            <img src="../img/hao.png" alt="">
+            <span>平民<input id="a" placeholder="0" style="border: 0; width: 15px;" >人</span>
+            <img src="../img/lang.png" alt="">
+            <span>杀手<input id="b" placeholder="0"  style="border: 0; width: 10px;">人</span>
+        </div>
+        <div style="height: 100px;  flex-direction: column;">
+            <div style="box-shadow:0 0;">
+                <h2 style="font-size: 14px;color: #666666; font-weight: 400;">请输入玩家数量:</h2> 
+                <input type="text" class="main-input "  maxlength="2" id="and" onkeyup="this.value=this.value.replace(/[^\d]/g,'')" >
+                <span style="font-size: 13px; color: #999999;">玩家数量为4-18</span>
+
+            </div>
+            <div style="border: 0;box-shadow: 0 0;" class="progress">
+                <span id="minus">-</span>
+                <input type="range" value="8" min="4" max="18" name="" id="slider" class="scrollbar">
+                <span id="add">+</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- <button onclick=" spread()">去发牌</button> -->
+        <button>去发牌</button>
+    </footer>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../js/2.js"></script>
+</body>
+
+</html>

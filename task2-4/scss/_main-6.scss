@@ -1,0 +1,109 @@
+body {
+    background-color: #29BDE0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
+    color: white;
+    background-color: #29BDE0;  
+    z-index: 1;
+     .header-bg{
+        position: relative;
+        @include box(100%,50px);
+        .header-kill{
+            position: absolute;
+            left: calc(50% - 48px);
+            top: calc(50% - 15px);
+            margin: 0;
+        }
+    }
+}
+
+main {
+    margin: 140px 0 100px 0;
+}
+
+.toulun {
+    @include flex(space-between, row);
+    @include box(94%, 50px);
+    padding: 0 3%;
+    background-color: white;
+}
+
+.daosan {
+    /* 注意 因为父级元素并没有设置相对定位 所以这里的绝对定位 的定位点就是页面的左上角  （这里我是故意没有在它父级元素mian设置相对定位） */
+    position: absolute;
+    left: 30px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid white;
+}
+
+.touxiang {
+    position: absolute;
+    top: 110px;
+    left: 27px;
+    color: white;
+}
+
+.main-there {
+    display: none;
+    // justify-content: space-around;
+    @include box(32vw, 35vw);
+
+    .box-nei {
+       
+        @include flex(flex-start, column);  
+        // display: none;
+        @include box(27vw, 27vw);
+        margin: 0 3vw;
+        .nei-one {
+            @include box(25vw, 18vw);  
+            text-align: center;
+            line-height: 18vw;
+            font-size: 5vw;
+            border: 1vw solid white;
+            border-bottom: 0;
+            background-color: #FBB435;
+        }
+
+        .nei-two {
+            @include box(25vw, 7vw);
+            border: 1vw solid white;
+            border-top: 0;
+            text-align: center;
+            line-height: 7vw;
+            font-size: 5vw;
+            color:white;
+            background-color: #1A99B7;
+        }
+      
+    }
+    img{
+        display: none;
+        margin: 0 14vw;
+    }
+
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    @include box(100%, 60px);
+    @include flex(center, row);
+    background-color: #29BDE0;
+    z-index: 1;
+    .tou {
+        @include box(80%, 50px);
+        border: 0;
+        color: white;
+        font-size: 20px;
+        background-color: #FBB435;
+        outline: none;
+        border-radius: 10px;
+    }
+}
